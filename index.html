@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Nickel's Cafe</title>
+        <style>
+            .box{
+                background-color: chocolate;
+                border: 2px solid black;
+            }
+            body{
+                background-color: rgb(184, 102, 10);
+            }
+            table{
+                background-color: aliceblue;
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            th{
+                background-color: burlywood;
+            }
+            td{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            .twohundered{
+                height: 200px;
+                width: 200px;                
+            }
+            td:hover{
+                background-color: rgb(255, 203, 90);
+            }
+            td{
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="cafenm" style="display: flex; background-color: darkgoldenrod; border: 2px solid black; width: 100%;">
+            <div><img src="https://media.istockphoto.com/id/1474792779/vector/zany-emoji-goofy-emoticon-with-crazy-eyes-and-tongue-out.jpg?s=612x612&w=0&k=20&c=4E0QQEoc-XRX_AdVBJ0OlffPd7-xfsNsd8Kv73CHngc=" width="50px" height="50px"></div>
+            <h1>NIKEL'S FOOD CAFE</h1>
+        </div>
+        <div id="menumain">
+<hr>
+            <div id="sandwiches" class="box" onclick="gosters()"> <h2>Sandwiches</h2> </div>
+            <div id="sw" style="visibility: hidden;">
+                <table>
+                    <tr>
+                        <th>photo</th>
+                        <th>name</th>
+                        <th>ingridients</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://www.seriouseats.com/thmb/s1tqfozqvGgOEDO6xe3gzaskncg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20240305-SEA-HamandCheese-AmandaSuarez15-fa4cf0500a28452ab2f1575057e5c059.jpg" class="twohundered"> </td>
+                        <td>Ham Sandwich</td>
+                        <td>Bread, Ham</td>
+                        <td>25¢</td>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://www.foodandwine.com/thmb/gv06VNqj1uUJHGlw5e7IULwUmr8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2012-r-xl-vegetable-sandwich-with-dill-sauce-2000-0984c1b513ae4af396aee039afa5e38c.jpg" class="twohundered"> </td>
+                        <td>Veggie Sandwich</td>
+                        <td>Lettuce, Spinach, Bread</td>
+                        <td>1$, hh-25¢</td>
+                    </tr>
+                </table>
+            </div>
+<script>
+    function gosters() {
+        const hedef = document.getElementById("sw")
+        hedef.style.visibility = "visible";
+    }
+</script>
+
+
+<hr>
+
+            <div id="drinks" class="box" onclick="gosterd()"> <h2>Drinks</h2> </div>
+            <div style="visibility: hidden;" id="dr">
+                <table>
+                    <tr>
+                        <th>photo</th>
+                        <th>name</th>
+                        <th>ingridients</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://www.aicr.org/wp-content/uploads/2020/06/peppermint-tea-on-teacup-1417945.jpg" class="twohundered"> </td>
+                        <td>Tea</td>
+                        <td>Black tea, Green tea, Herbal teas</td>
+                        <td>2$, hh-25¢</td>
+                    </tr>
+                </table>
+            </div>
+
+<script>
+    function gosterd() {
+        const hedef = document.getElementById("dr")
+        hedef.style.visibility = "visible";
+    }
+</script>
+
+<hr>
+
+            <div id="salads" class="box" onclick="gostersl()"> <h2>Salads</h2> </div>
+            <div style="visibility: hidden;" id="slt">
+                <table>
+                    <tr>
+                        <th>photo</th>
+                        <th>name</th>
+                        <th>ingridients</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://www.eatingwell.com/thmb/CcLY-9Ru3OWpd5k_V-hoxlk4whg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chopped-power-salad-with-chicken-hero-1x1-0178-475bbf1bbd884d5d97fc236b8975dff2.jpg" class="twohundered"> </td>
+                        <td>salad</td>
+                        <td>Lettuce, Tomato, Olives</td>
+                        <td>1$, hh-25¢</td>
+                    </tr>
+                </table>
+            </div>
+
+<script>
+    function gostersl() {
+        const hedef = document.getElementById("slt")
+        hedef.style.visibility = "visible";
+    }
+</script>
+
+<hr>
+
+            <div id="treats" class="box" onclick="gostert()"> <h2>Treats</h2> </div>
+            <div id="tt" style="visibility: hidden;">
+                <table>
+                    <tr>
+                        <th>photo</th>
+                        <th>name</th>
+                        <th>ingridients</th>
+                        <th>price</th>
+                    </tr>
+                    <tr>
+                        <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNo6_XtnbjsWcAfSg9umrzmBmXjMt30CYsbQ&s" class="twohundered"> </td>
+                        <td>Vanilla Ice Cream</td>
+                        <td></td>
+                        <td>1$</td>
+                    </tr>
+                </table>
+            </div>
+
+<script>
+    function gostert() {
+        const hedef = document.getElementById("tt")
+        hedef.style.visibility = "visible";
+    }
+</script>
+
+
+
+        </div>
+    </body>
+</html>
